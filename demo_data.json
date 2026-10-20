@@ -1,0 +1,539 @@
+{
+  "total_revenue": 20476260.43,
+  "total_orders": 40077,
+  "total_customers": 5878,
+  "total_products": 4917,
+  "total_units": 11205148,
+  "total_countries": 43,
+  "total_cancellations": 22497,
+  "cancel_pct": 2.18,
+  "top_products": [
+    {
+      "StockCode": "M",
+      "Description": "Manual",
+      "TotalRevenue": 339226.24,
+      "TotalQuantitySold": 9629,
+      "UniqueCustomers": 438,
+      "TotalInvoices": 784
+    },
+    {
+      "StockCode": "22423",
+      "Description": "REGENCY CAKESTAND 3 TIER",
+      "TotalRevenue": 330590.32,
+      "TotalQuantitySold": 26478,
+      "UniqueCustomers": 1314,
+      "TotalInvoices": 3918
+    },
+    {
+      "StockCode": "DOT",
+      "Description": "DOTCOM POSTAGE",
+      "TotalRevenue": 309854.11,
+      "TotalQuantitySold": 1415,
+      "UniqueCustomers": 1,
+      "TotalInvoices": 1415
+    },
+    {
+      "StockCode": "85123A",
+      "Description": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "TotalRevenue": 257724.71,
+      "TotalQuantitySold": 94203,
+      "UniqueCustomers": 1490,
+      "TotalInvoices": 5365
+    },
+    {
+      "StockCode": "85099B",
+      "Description": "JUMBO BAG RED WHITE SPOTTY ",
+      "TotalRevenue": 180569.34,
+      "TotalQuantitySold": 96757,
+      "UniqueCustomers": 978,
+      "TotalInvoices": 3989
+    },
+    {
+      "StockCode": "23843",
+      "Description": "PAPER CRAFT , LITTLE BIRDIE",
+      "TotalRevenue": 168469.6,
+      "TotalQuantitySold": 80995,
+      "UniqueCustomers": 1,
+      "TotalInvoices": 1
+    },
+    {
+      "StockCode": "47566",
+      "Description": "PARTY BUNTING",
+      "TotalRevenue": 148318.28,
+      "TotalQuantitySold": 28200,
+      "UniqueCustomers": 894,
+      "TotalInvoices": 2674
+    },
+    {
+      "StockCode": "84879",
+      "Description": "ASSORTED COLOUR BIRD ORNAMENT",
+      "TotalRevenue": 129324.49,
+      "TotalQuantitySold": 80082,
+      "UniqueCustomers": 1010,
+      "TotalInvoices": 2807
+    },
+    {
+      "StockCode": "POST",
+      "Description": "POSTAGE",
+      "TotalRevenue": 125682.42,
+      "TotalQuantitySold": 5363,
+      "UniqueCustomers": 405,
+      "TotalInvoices": 1851
+    },
+    {
+      "StockCode": "22086",
+      "Description": "PAPER CHAIN KIT 50'S CHRISTMAS ",
+      "TotalRevenue": 117760.29,
+      "TotalQuantitySold": 35084,
+      "UniqueCustomers": 896,
+      "TotalInvoices": 2018
+    }
+  ],
+  "top_customers": [
+    {
+      "CustomerID": 18102,
+      "TotalSpend": 580987.04,
+      "TotalOrders": 145,
+      "TotalUnits": 181645,
+      "UniqueProducts": 382
+    },
+    {
+      "CustomerID": 14646,
+      "TotalSpend": 528602.52,
+      "TotalOrders": 151,
+      "TotalUnits": 367193,
+      "UniqueProducts": 961
+    },
+    {
+      "CustomerID": 14156,
+      "TotalSpend": 313437.62,
+      "TotalOrders": 156,
+      "TotalUnits": 164325,
+      "UniqueProducts": 1446
+    },
+    {
+      "CustomerID": 14911,
+      "TotalSpend": 291420.81,
+      "TotalOrders": 398,
+      "TotalUnits": 147972,
+      "UniqueProducts": 2550
+    },
+    {
+      "CustomerID": 17450,
+      "TotalSpend": 244784.25,
+      "TotalOrders": 51,
+      "TotalUnits": 83914,
+      "UniqueProducts": 144
+    },
+    {
+      "CustomerID": 13694,
+      "TotalSpend": 195640.69,
+      "TotalOrders": 143,
+      "TotalUnits": 188201,
+      "UniqueProducts": 896
+    },
+    {
+      "CustomerID": 17511,
+      "TotalSpend": 172132.87,
+      "TotalOrders": 60,
+      "TotalUnits": 117174,
+      "UniqueProducts": 657
+    },
+    {
+      "CustomerID": 16446,
+      "TotalSpend": 168472.5,
+      "TotalOrders": 2,
+      "TotalUnits": 80997,
+      "UniqueProducts": 3
+    },
+    {
+      "CustomerID": 16684,
+      "TotalSpend": 147142.77,
+      "TotalOrders": 55,
+      "TotalUnits": 104810,
+      "UniqueProducts": 184
+    },
+    {
+      "CustomerID": 12415,
+      "TotalSpend": 144458.37,
+      "TotalOrders": 28,
+      "TotalUnits": 91447,
+      "UniqueProducts": 498
+    }
+  ],
+  "top_countries": [
+    {
+      "Country": "United Kingdom",
+      "revenue": 17410196.1,
+      "orders": 36535,
+      "customers": 5350
+    },
+    {
+      "Country": "EIRE",
+      "revenue": 658767.3099999999,
+      "orders": 626,
+      "customers": 5
+    },
+    {
+      "Country": "Netherlands",
+      "revenue": 554038.09,
+      "orders": 228,
+      "customers": 22
+    },
+    {
+      "Country": "Germany",
+      "revenue": 425019.71,
+      "orders": 789,
+      "customers": 107
+    },
+    {
+      "Country": "France",
+      "revenue": 350456.09,
+      "orders": 622,
+      "customers": 95
+    },
+    {
+      "Country": "Australia",
+      "revenue": 169283.46,
+      "orders": 95,
+      "customers": 15
+    },
+    {
+      "Country": "Spain",
+      "revenue": 108332.49,
+      "orders": 154,
+      "customers": 41
+    },
+    {
+      "Country": "Switzerland",
+      "revenue": 100685.59,
+      "orders": 93,
+      "customers": 22
+    },
+    {
+      "Country": "Sweden",
+      "revenue": 91869.81999999999,
+      "orders": 105,
+      "customers": 19
+    },
+    {
+      "Country": "Denmark",
+      "revenue": 68580.69,
+      "orders": 43,
+      "customers": 12
+    }
+  ],
+  "monthly_trend": [
+    {
+      "YearMonth": "2009-12",
+      "revenue": 822483.95,
+      "orders": 1682,
+      "units": 425461
+    },
+    {
+      "YearMonth": "2010-01",
+      "revenue": 651155.11,
+      "orders": 1105,
+      "units": 390672
+    },
+    {
+      "YearMonth": "2010-02",
+      "revenue": 551504.72,
+      "orders": 1201,
+      "units": 381879
+    },
+    {
+      "YearMonth": "2010-03",
+      "revenue": 830915.26,
+      "orders": 1681,
+      "units": 526026
+    },
+    {
+      "YearMonth": "2010-04",
+      "revenue": 678875.25,
+      "orders": 1462,
+      "units": 366705
+    },
+    {
+      "YearMonth": "2010-05",
+      "revenue": 657705.5,
+      "orders": 1500,
+      "units": 395868
+    },
+    {
+      "YearMonth": "2010-06",
+      "revenue": 749537.3099999999,
+      "orders": 1645,
+      "units": 406820
+    },
+    {
+      "YearMonth": "2010-07",
+      "revenue": 648810.27,
+      "orders": 1529,
+      "units": 337895
+    },
+    {
+      "YearMonth": "2010-08",
+      "revenue": 695251.91,
+      "orders": 1425,
+      "units": 472380
+    },
+    {
+      "YearMonth": "2010-09",
+      "revenue": 921696.99,
+      "orders": 1839,
+      "units": 583864
+    },
+    {
+      "YearMonth": "2010-10",
+      "revenue": 1161902.22,
+      "orders": 2301,
+      "units": 619996
+    },
+    {
+      "YearMonth": "2010-11",
+      "revenue": 1464293.14,
+      "orders": 2747,
+      "units": 725161
+    },
+    {
+      "YearMonth": "2010-12",
+      "revenue": 821452.73,
+      "orders": 1559,
+      "units": 358019
+    },
+    {
+      "YearMonth": "2011-01",
+      "revenue": 689811.61,
+      "orders": 1086,
+      "units": 387099
+    },
+    {
+      "YearMonth": "2011-02",
+      "revenue": 522545.56,
+      "orders": 1100,
+      "units": 282934
+    },
+    {
+      "YearMonth": "2011-03",
+      "revenue": 716215.26,
+      "orders": 1454,
+      "units": 376599
+    },
+    {
+      "YearMonth": "2011-04",
+      "revenue": 536968.49,
+      "orders": 1246,
+      "units": 307953
+    },
+    {
+      "YearMonth": "2011-05",
+      "revenue": 769296.61,
+      "orders": 1681,
+      "units": 395001
+    },
+    {
+      "YearMonth": "2011-06",
+      "revenue": 760547.01,
+      "orders": 1533,
+      "units": 388511
+    },
+    {
+      "YearMonth": "2011-07",
+      "revenue": 718076.12,
+      "orders": 1475,
+      "units": 399693
+    },
+    {
+      "YearMonth": "2011-08",
+      "revenue": 757841.38,
+      "orders": 1361,
+      "units": 421020
+    },
+    {
+      "YearMonth": "2011-09",
+      "revenue": 1056435.19,
+      "orders": 1837,
+      "units": 569573
+    },
+    {
+      "YearMonth": "2011-10",
+      "revenue": 1151263.73,
+      "orders": 2040,
+      "units": 621029
+    },
+    {
+      "YearMonth": "2011-11",
+      "revenue": 1503866.78,
+      "orders": 2769,
+      "units": 751377
+    },
+    {
+      "YearMonth": "2011-12",
+      "revenue": 637808.33,
+      "orders": 819,
+      "units": 313613
+    }
+  ],
+  "spend_distribution": {
+    "0-100": 217,
+    "100-500": 1849,
+    "500-1K": 1107,
+    "1K-5K": 2060,
+    "5K-10K": 384,
+    "10K-50K": 227,
+    "50K+": 34
+  },
+  "top_products_qty": [
+    {
+      "StockCode": "84077",
+      "Description": "WORLD WAR 2 GLIDERS ASSTD DESIGNS",
+      "TotalQuantitySold": 106139,
+      "TotalRevenue": 24445.61
+    },
+    {
+      "StockCode": "85099B",
+      "Description": "JUMBO BAG RED WHITE SPOTTY ",
+      "TotalQuantitySold": 96757,
+      "TotalRevenue": 180569.34
+    },
+    {
+      "StockCode": "21212",
+      "Description": "PACK OF 72 RETRO SPOT CAKE CASES",
+      "TotalQuantitySold": 94884,
+      "TotalRevenue": 51825.15
+    },
+    {
+      "StockCode": "85123A",
+      "Description": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "TotalQuantitySold": 94203,
+      "TotalRevenue": 257724.71
+    },
+    {
+      "StockCode": "22197",
+      "Description": "POPCORN HOLDER , SMALL ",
+      "TotalQuantitySold": 88499,
+      "TotalRevenue": 79520.2
+    },
+    {
+      "StockCode": "23843",
+      "Description": "PAPER CRAFT , LITTLE BIRDIE",
+      "TotalQuantitySold": 80995,
+      "TotalRevenue": 168469.6
+    },
+    {
+      "StockCode": "84879",
+      "Description": "ASSORTED COLOUR BIRD ORNAMENT",
+      "TotalQuantitySold": 80082,
+      "TotalRevenue": 129324.49
+    },
+    {
+      "StockCode": "23166",
+      "Description": "MEDIUM CERAMIC TOP STORAGE JAR",
+      "TotalQuantitySold": 78033,
+      "TotalRevenue": 81700.92
+    },
+    {
+      "StockCode": "17003",
+      "Description": "BROCADE RING PURSE ",
+      "TotalQuantitySold": 70369,
+      "TotalRevenue": 14766.42
+    },
+    {
+      "StockCode": "21977",
+      "Description": "PACK OF 60 PINK PAISLEY CAKE CASES",
+      "TotalQuantitySold": 56061,
+      "TotalRevenue": 28081.73
+    },
+    {
+      "StockCode": "84991",
+      "Description": "60 TEATIME FAIRY CAKE CASES",
+      "TotalQuantitySold": 54028,
+      "TotalRevenue": 27041.21
+    },
+    {
+      "StockCode": "15036",
+      "Description": "ASSORTED COLOURS SILK FAN",
+      "TotalQuantitySold": 44272,
+      "TotalRevenue": 32967.03
+    },
+    {
+      "StockCode": "22492",
+      "Description": "MINI PAINT SET VINTAGE ",
+      "TotalQuantitySold": 43546,
+      "TotalRevenue": 27817.59
+    },
+    {
+      "StockCode": "84755",
+      "Description": "COLOUR GLASS T-LIGHT HOLDER HANGING",
+      "TotalQuantitySold": 40439,
+      "TotalRevenue": 25205.13
+    },
+    {
+      "StockCode": "20725",
+      "Description": "LUNCH BAG RED SPOTTY",
+      "TotalQuantitySold": 40317,
+      "TotalRevenue": 71106.29
+    },
+    {
+      "StockCode": "21213",
+      "Description": "PACK OF 72 SKULL CAKE CASES",
+      "TotalQuantitySold": 40263,
+      "TotalRevenue": 21390.76
+    },
+    {
+      "StockCode": "22178",
+      "Description": "VICTORIAN GLASS HANGING T-LIGHT",
+      "TotalQuantitySold": 40081,
+      "TotalRevenue": 52382.82
+    },
+    {
+      "StockCode": "22386",
+      "Description": "JUMBO BAG PINK WITH WHITE SPOTS",
+      "TotalQuantitySold": 39437,
+      "TotalRevenue": 76324.62
+    },
+    {
+      "StockCode": "22616",
+      "Description": "PACK OF 12 LONDON TISSUES ",
+      "TotalQuantitySold": 39147,
+      "TotalRevenue": 12460.16
+    },
+    {
+      "StockCode": "21232",
+      "Description": "STRAWBERRY CERAMIC TRINKET BOX",
+      "TotalQuantitySold": 37997,
+      "TotalRevenue": 49300.57
+    }
+  ],
+  "cancel_by_country": [
+    {
+      "country": "United Kingdom",
+      "count": 19684
+    },
+    {
+      "country": "Germany",
+      "count": 899
+    },
+    {
+      "country": "EIRE",
+      "count": 508
+    },
+    {
+      "country": "France",
+      "count": 385
+    },
+    {
+      "country": "USA",
+      "count": 126
+    }
+  ],
+  "order_distribution": {
+    "1": 1623,
+    "2-3": 1608,
+    "4-5": 846,
+    "6-10": 925,
+    "11-20": 579,
+    "20+": 297
+  }
+}

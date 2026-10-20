@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Large Datasets & Raw Data (Over GitHub file limits)
+*.xlsx
+*.parquet
+data/raw/
+data/processed/cleaned_transactions.csv
+data/processed/customer_transactions.csv
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

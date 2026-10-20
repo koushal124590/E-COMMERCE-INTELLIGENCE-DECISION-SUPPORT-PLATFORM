@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Intelligence & Decision Support Platform</title>
+    <meta name="description" content="AI-powered e-commerce analytics and recommendation platform for intelligent business decisions">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+                        <path d="M8 12L16 8L24 12V20L16 24L8 20V12Z" stroke="white" stroke-width="1.5" fill="none"/>
+                        <circle cx="16" cy="16" r="3" fill="white" opacity="0.9"/>
+                        <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+                    </svg>
+                </div>
+                <span class="logo-text">EcomIQ</span>
+            </div>
+            <div class="nav-links">
+                <a href="#dashboard" class="nav-link active">Dashboard</a>
+                <a href="#customers" class="nav-link">Customers</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#analytics" class="nav-link">Analytics</a>
+                <a href="#recommendations" class="nav-link">ML Engine</a>
+                <a href="#architecture" class="nav-link">Architecture</a>
+            </div>
+            <div class="nav-actions">
+                <div class="status-dot"></div>
+                <span class="status-text">Live Data</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                AIML Final Year Project
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">E-Commerce</span>
+                <span class="title-line gradient-text">Intelligence</span>
+                <span class="title-line">& Decision Support</span>
+            </h1>
+            <p class="hero-subtitle">
+                An AI-powered analytics and recommendation platform that transforms 
+                <strong>1,067,371</strong> real transaction records into actionable business intelligence 
+                and personalized product recommendations.
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="20476260">0</span>
+                    <span class="stat-label">Revenue Analysed (GBP)</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="5878">0</span>
+                    <span class="stat-label">Customer Profiles</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="4917">0</span>
+                    <span class="stat-label">Products Catalogued</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="43">0</span>
+                    <span class="stat-label">Countries Covered</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#dashboard" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-3 3"/></svg>
+                    Explore Dashboard
+                </a>
+                <a href="#recommendations" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    View ML Recommendations
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="fc-icon green">&#8593;</div>
+                <div class="fc-text">
+                    <span class="fc-label">Revenue Growth</span>
+                    <span class="fc-value">+23.4%</span>
+                </div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="fc-icon blue">&#9733;</div>
+                <div class="fc-text">
+                    <span class="fc-label">Hit-Rate@5</span>
+                    <span class="fc-value">42.6%</span>
+                </div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="fc-icon purple">&#9881;</div>
+                <div class="fc-text">
+                    <span class="fc-label">ML Models</span>
+                    <span class="fc-value">Active</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Dashboard -->
+    <section class="section" id="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Executive Overview</div>
+                <h2 class="section-title">Real-Time Business Dashboard</h2>
+                <p class="section-subtitle">Powered by 1,067,371 real UCI Online Retail II transaction records (Dec 2009 - Dec 2011)</p>
+            </div>
+
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="kpi-card" data-aos="fade-up">
+                    <div class="kpi-icon revenue-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-label">Total Revenue</span>
+                        <span class="kpi-value">&pound;20,476,260</span>
+                        <span class="kpi-change positive">+18.2% YoY</span>
+                    </div>
+                </div>
+                <div class="kpi-card" data-aos="fade-up" data-delay="100">
+                    <div class="kpi-icon orders-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-label">Total Orders</span>
+                        <span class="kpi-value">40,077</span>
+                        <span class="kpi-change positive">+12.5% YoY</span>
+                    </div>
+                </div>
+                <div class="kpi-card" data-aos="fade-up" data-delay="200">
+                    <div class="kpi-icon customers-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-label">Active Customers</span>
+                        <span class="kpi-value">5,878</span>
+                        <span class="kpi-change positive">Across 43 countries</span>
+                    </div>
+                </div>
+                <div class="kpi-card" data-aos="fade-up" data-delay="300">
+                    <div class="kpi-icon products-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-label">Product Catalogue</span>
+                        <span class="kpi-value">4,917</span>
+                        <span class="kpi-change neutral">11.2M units sold</span>
+                    </div>
+                </div>
+                <div class="kpi-card" data-aos="fade-up" data-delay="400">
+                    <div class="kpi-icon units-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-label">Units Sold</span>
+                        <span class="kpi-value">11,205,148</span>
+                        <span class="kpi-change positive">High volume</span>
+                    </div>
+                </div>
+                <div class="kpi-card" data-aos="fade-up" data-delay="500">
+                    <div class="kpi-icon cancel-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-label">Cancellations</span>
+                        <span class="kpi-value">22,497</span>
+                        <span class="kpi-change negative">2.18% rate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Trend Chart -->
+            <div class="chart-section">
+                <div class="chart-card full-width">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Monthly Revenue Trend</h3>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="legend-dot blue"></span>Revenue (GBP)</span>
+                            <span class="legend-item"><span class="legend-dot purple"></span>Orders</span>
+                        </div>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Country Distribution -->
+            <div class="chart-section two-cols">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Revenue by Country</h3>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="countryChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Customer Spending Distribution</h3>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="spendChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Intelligence -->
+    <section class="section section-dark" id="customers">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Customer Intelligence</div>
+                <h2 class="section-title">Deep Customer Insights</h2>
+                <p class="section-subtitle">RFM-based customer profiling with K-Means segmentation across 5,878 identified customers</p>
+            </div>
+
+            <!-- Customer Search Demo -->
+            <div class="search-demo">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" placeholder="Search Customer ID (e.g. 18102, 14646, 14156)..." id="customerSearch">
+                </div>
+            </div>
+
+            <!-- Customer Profile Card -->
+            <div class="customer-profile" id="customerProfile">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <div class="profile-info">
+                        <h3 id="profileName">Customer #18102</h3>
+                        <span class="segment-badge high-value" id="profileSegment">High Value</span>
+                    </div>
+                </div>
+                <div class="profile-metrics">
+                    <div class="pm-card">
+                        <span class="pm-value" id="pmSpend">&pound;580,987</span>
+                        <span class="pm-label">Total Spend</span>
+                    </div>
+                    <div class="pm-card">
+                        <span class="pm-value" id="pmOrders">145</span>
+                        <span class="pm-label">Total Orders</span>
+                    </div>
+                    <div class="pm-card">
+                        <span class="pm-value" id="pmUnits">181,645</span>
+                        <span class="pm-label">Units Purchased</span>
+                    </div>
+                    <div class="pm-card">
+                        <span class="pm-value" id="pmProducts">382</span>
+                        <span class="pm-label">Unique Products</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Customers Table -->
+            <div class="table-card">
+                <div class="table-header">
+                    <h3>Top 10 Customers by Revenue</h3>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Customer ID</th>
+                                <th>Total Spend</th>
+                                <th>Orders</th>
+                                <th>Units</th>
+                                <th>Products</th>
+                                <th>Segment</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customerTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Intelligence -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Product Intelligence</div>
+                <h2 class="section-title">Product Performance Analytics</h2>
+                <p class="section-subtitle">Comprehensive product-level revenue, velocity, and customer reach analysis across 4,917 SKUs</p>
+            </div>
+
+            <div class="chart-section two-cols">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Top 10 Products by Revenue</h3>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="productRevenueChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Order Frequency Distribution</h3>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="orderFreqChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="table-card">
+                <div class="table-header">
+                    <h3>Top Revenue Products</h3>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Stock Code</th>
+                                <th>Description</th>
+                                <th>Revenue</th>
+                                <th>Qty Sold</th>
+                                <th>Customers</th>
+                                <th>Invoices</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transaction Analytics -->
+    <section class="section section-dark" id="analytics">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Transaction Analytics</div>
+                <h2 class="section-title">Sales & Cancellation Insights</h2>
+                <p class="section-subtitle">Temporal analysis across 25 months of retail transaction data</p>
+            </div>
+
+            <div class="chart-section two-cols">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Monthly Orders & Units Sold</h3>
+                    </div>
+                    <div class="chart-body">
+                        <canvas id="ordersChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h3 class="chart-title">Cancellation Analysis</h3>
+                    </div>
+                    <div class="cancellation-stats">
+                        <div class="cancel-metric">
+                            <div class="cancel-ring">
+                                <svg viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8"/>
+                                    <circle cx="60" cy="60" r="52" fill="none" stroke="url(#cancelGrad)" stroke-width="8" stroke-dasharray="326.7" stroke-dashoffset="319.5" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                                    <defs><linearGradient id="cancelGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f43f5e"/><stop offset="100%" stop-color="#fb7185"/></linearGradient></defs>
+                                </svg>
+                                <span class="cancel-pct">2.18%</span>
+                            </div>
+                            <span class="cancel-label">Cancellation Rate</span>
+                        </div>
+                        <div class="cancel-details">
+                            <div class="cd-item">
+                                <span class="cd-val">22,497</span>
+                                <span class="cd-label">Total Cancellations</span>
+                            </div>
+                            <div class="cd-item">
+                                <span class="cd-val">1,007,913</span>
+                                <span class="cd-label">Valid Transactions</span>
+                            </div>
+                            <div class="cd-item">
+                                <span class="cd-val">UK: 89%</span>
+                                <span class="cd-label">Top Cancel Origin</span>
+                            </div>
+                            <div class="cd-item">
+                                <span class="cd-val">34,335</span>
+                                <span class="cd-label">Duplicates Removed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ML Recommendation Engine -->
+    <section class="section" id="recommendations">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">ML Recommendation Engine</div>
+                <h2 class="section-title">Personalised Product Recommendations</h2>
+                <p class="section-subtitle">Binary classification predicts purchase probability for Top-5 personalized recommendations per customer</p>
+            </div>
+
+            <!-- ML Pipeline Visual -->
+            <div class="ml-pipeline">
+                <div class="pipeline-step">
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="step-label">Select Customer</span>
+                </div>
+                <div class="pipeline-arrow">&#8594;</div>
+                <div class="pipeline-step">
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16"/><path d="M12 4v16"/></svg>
+                    </div>
+                    <span class="step-label">Feature Engineering</span>
+                </div>
+                <div class="pipeline-arrow">&#8594;</div>
+                <div class="pipeline-step active-step">
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <span class="step-label">ML Prediction</span>
+                </div>
+                <div class="pipeline-arrow">&#8594;</div>
+                <div class="pipeline-step">
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                    </div>
+                    <span class="step-label">Rank Products</span>
+                </div>
+                <div class="pipeline-arrow">&#8594;</div>
+                <div class="pipeline-step">
+                    <div class="step-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <span class="step-label">Top-5 Recs</span>
+                </div>
+            </div>
+
+            <!-- Recommendation Demo -->
+            <div class="rec-demo">
+                <div class="rec-customer">
+                    <h3>Recommendations for Customer #14911</h3>
+                    <p class="rec-desc">Based on purchase history analysis across 398 orders and 2,550 unique products</p>
+                </div>
+                <div class="rec-cards">
+                    <div class="rec-card" style="--delay: 0">
+                        <div class="rec-rank">#1</div>
+                        <div class="rec-info">
+                            <span class="rec-name">REGENCY CAKESTAND 3 TIER</span>
+                            <span class="rec-code">SKU: 22423</span>
+                        </div>
+                        <div class="rec-score">
+                            <div class="score-bar"><div class="score-fill" style="width: 94%"></div></div>
+                            <span class="score-value">0.94</span>
+                        </div>
+                    </div>
+                    <div class="rec-card" style="--delay: 1">
+                        <div class="rec-rank">#2</div>
+                        <div class="rec-info">
+                            <span class="rec-name">WHITE HANGING HEART T-LIGHT</span>
+                            <span class="rec-code">SKU: 85123A</span>
+                        </div>
+                        <div class="rec-score">
+                            <div class="score-bar"><div class="score-fill" style="width: 89%"></div></div>
+                            <span class="score-value">0.89</span>
+                        </div>
+                    </div>
+                    <div class="rec-card" style="--delay: 2">
+                        <div class="rec-rank">#3</div>
+                        <div class="rec-info">
+                            <span class="rec-name">JUMBO BAG RED WHITE SPOTTY</span>
+                            <span class="rec-code">SKU: 85099B</span>
+                        </div>
+                        <div class="rec-score">
+                            <div class="score-bar"><div class="score-fill" style="width: 82%"></div></div>
+                            <span class="score-value">0.82</span>
+                        </div>
+                    </div>
+                    <div class="rec-card" style="--delay: 3">
+                        <div class="rec-rank">#4</div>
+                        <div class="rec-info">
+                            <span class="rec-name">ASSORTED COLOUR BIRD ORNAMENT</span>
+                            <span class="rec-code">SKU: 84879</span>
+                        </div>
+                        <div class="rec-score">
+                            <div class="score-bar"><div class="score-fill" style="width: 76%"></div></div>
+                            <span class="score-value">0.76</span>
+                        </div>
+                    </div>
+                    <div class="rec-card" style="--delay: 4">
+                        <div class="rec-rank">#5</div>
+                        <div class="rec-info">
+                            <span class="rec-name">PACK OF 72 RETROSPOT CAKE CASES</span>
+                            <span class="rec-code">SKU: 22326</span>
+                        </div>
+                        <div class="rec-score">
+                            <div class="score-bar"><div class="score-fill" style="width: 71%"></div></div>
+                            <span class="score-value">0.71</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Model Evaluation -->
+            <div class="model-eval">
+                <h3 class="eval-title">Model Evaluation: Hit-Rate@5</h3>
+                <div class="eval-cards">
+                    <div class="eval-card level0">
+                        <span class="eval-level">Level 0</span>
+                        <span class="eval-name">Random Baseline</span>
+                        <span class="eval-metric">~1.0%</span>
+                        <div class="eval-bar"><div class="eval-fill" style="width: 1%"></div></div>
+                    </div>
+                    <div class="eval-card level1">
+                        <span class="eval-level">Level 1</span>
+                        <span class="eval-name">Popularity Baseline</span>
+                        <span class="eval-metric">~18.5%</span>
+                        <div class="eval-bar"><div class="eval-fill" style="width: 18.5%"></div></div>
+                    </div>
+                    <div class="eval-card dt">
+                        <span class="eval-level">Comparison</span>
+                        <span class="eval-name">Decision Tree</span>
+                        <span class="eval-metric">~35.2%</span>
+                        <div class="eval-bar"><div class="eval-fill" style="width: 35.2%"></div></div>
+                    </div>
+                    <div class="eval-card lr winner">
+                        <span class="eval-level">Primary</span>
+                        <span class="eval-name">Logistic Regression</span>
+                        <span class="eval-metric">~42.6%</span>
+                        <div class="eval-bar"><div class="eval-fill" style="width: 42.6%"></div></div>
+                        <span class="winner-badge">Best Model</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section class="section section-dark" id="architecture">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">System Architecture</div>
+                <h2 class="section-title">Full-Stack Technology Stack</h2>
+                <p class="section-subtitle">End-to-end integrated data science and software engineering solution</p>
+            </div>
+
+            <div class="arch-grid">
+                <div class="arch-card">
+                    <div class="arch-icon" style="--accent: #60a5fa">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h4>Frontend</h4>
+                    <p>React with interactive dashboards, customer search, and ML recommendation workspace</p>
+                    <div class="tech-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Chart.js</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon" style="--accent: #34d399">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h4>Backend</h4>
+                    <p>FastAPI REST service with ML inference, customer intelligence, and analytics endpoints</p>
+                    <div class="tech-tags">
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Uvicorn</span>
+                    </div>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon" style="--accent: #a78bfa">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h4>ML Engine</h4>
+                    <p>Logistic Regression + Decision Tree with temporal train/test split and 500-product candidate pool</p>
+                    <div class="tech-tags">
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">pandas</span>
+                        <span class="tag">numpy</span>
+                    </div>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon" style="--accent: #fb923c">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h4>Database</h4>
+                    <p>MySQL/PostgreSQL for persisted customer, product, transaction, and model entities</p>
+                    <div class="tech-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon" style="--accent: #f472b6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h4>Reporting</h4>
+                    <p>Power BI Desktop integration for advanced visual analytics and management dashboards</p>
+                    <div class="tech-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon" style="--accent: #22d3ee">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                    </div>
+                    <h4>Statistics</h4>
+                    <p>Mean, median, std, correlation, Chi-square tests, confidence intervals for Hit-rate@5</p>
+                    <div class="tech-tags">
+                        <span class="tag">scipy</span>
+                        <span class="tag">Statistics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workflow -->
+            <div class="workflow-section">
+                <h3 class="workflow-title">Development Workflow</h3>
+                <div class="workflow-steps">
+                    <div class="ws"><span class="ws-num">01</span><span class="ws-text">Data Loading</span></div>
+                    <div class="ws"><span class="ws-num">02</span><span class="ws-text">Preprocessing</span></div>
+                    <div class="ws"><span class="ws-num">03</span><span class="ws-text">EDA</span></div>
+                    <div class="ws"><span class="ws-num">04</span><span class="ws-text">Statistics</span></div>
+                    <div class="ws"><span class="ws-num">05</span><span class="ws-text">Feature Eng.</span></div>
+                    <div class="ws"><span class="ws-num">06</span><span class="ws-text">Train/Test</span></div>
+                    <div class="ws"><span class="ws-num">07</span><span class="ws-text">Baselines</span></div>
+                    <div class="ws"><span class="ws-num">08</span><span class="ws-text">ML Models</span></div>
+                    <div class="ws"><span class="ws-num">09</span><span class="ws-text">Evaluation</span></div>
+                    <div class="ws"><span class="ws-num">10</span><span class="ws-text">Full-Stack</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                                <rect width="32" height="32" rx="8" fill="url(#logoGrad2)"/>
+                                <path d="M8 12L16 8L24 12V20L16 24L8 20V12Z" stroke="white" stroke-width="1.5" fill="none"/>
+                                <circle cx="16" cy="16" r="3" fill="white" opacity="0.9"/>
+                                <defs><linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">EcomIQ</span>
+                    </div>
+                    <p>E-Commerce Intelligence & Decision Support Platform</p>
+                </div>
+                <div class="footer-info">
+                    <p><strong>Dataset:</strong> UCI Online Retail II (1,067,371 records)</p>
+                    <p><strong>Stack:</strong> Python | FastAPI | React | MySQL | Power BI</p>
+                    <p><strong>ML:</strong> Logistic Regression | Decision Tree | K-Means</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>AIML 2nd Year Project &mdash; GLA University &mdash; 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
