@@ -17,6 +17,7 @@ data/processed/customer_transactions.csv
 data/processed/historical_transactions.csv
 data/processed/evaluation_transactions.csv
 data/processed/customer_product_features.csv
+data/processed/ml_predictions.csv
 
 # OS & Editor files
 .DS_Store
